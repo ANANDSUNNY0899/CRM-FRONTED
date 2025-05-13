@@ -26,7 +26,7 @@ export default function Dashboard() {
     }
 
     try {
-      const res = await axios.get("http://localhost:5000/api/users/profile", {
+      const res = await axios.get("https://crm-backend-1-9x3q.onrender.com/api/users/profile", {
         headers: {
           Authorization: `Bearer ${storedUser.token}`,
         },
@@ -44,7 +44,7 @@ export default function Dashboard() {
     if (!storedUser || !storedUser.token) return;
 
     try {
-      const res = await axios.get("http://localhost:5000/api/users/all", {
+      const res = await axios.get("https://crm-backend-1-9x3q.onrender.com/api/users/all", {
         headers: {
           Authorization: `Bearer ${storedUser.token}`,
         },
@@ -60,7 +60,7 @@ export default function Dashboard() {
     if (!storedUser || !storedUser.token) return;
 
     try {
-      const res = await axios.get("http://localhost:5000/api/customers", {
+      const res = await axios.get("https://crm-backend-1-9x3q.onrender.com/api/customers", {
         headers: {
           Authorization: `Bearer ${storedUser.token}`,
         },
@@ -78,7 +78,7 @@ export default function Dashboard() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/customers",
+        "https://crm-backend-1-9x3q.onrender.com/api/customers",
         newCustomer,
         {
           headers: {
@@ -99,7 +99,7 @@ export default function Dashboard() {
     if (!storedUser || !storedUser.token) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/customers/${customerId}`, {
+      await axios.delete(`https://crm-backend-1-9x3q.onrender.com/api/customers/${customerId}`, {
         headers: {
           Authorization: `Bearer ${storedUser.token}`,
         },
@@ -118,7 +118,7 @@ export default function Dashboard() {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/customers/${editCustomer._id}`,
+        `https://crm-backend-1-9x3q.onrender.com/api/customers/${editCustomer._id}`,
         editCustomer,
         {
           headers: {

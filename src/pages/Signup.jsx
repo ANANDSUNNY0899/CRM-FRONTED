@@ -15,7 +15,7 @@ export default function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/users", formData);
+      const res = await axios.post("https://crm-backend-1-9x3q.onrender.com/api/users", formData);
       localStorage.setItem("user", JSON.stringify(res.data));
       navigate("/dashboard"); 
     } catch (err) {
