@@ -7,10 +7,7 @@ This is the frontend of a CRM (Customer Relationship Management) system built wi
 -  Customer segmentation
 -  Campaign creation
 -  Dashboard overview
--  AI Integration using Gemini API
-  - Natural Language to Segment Rules
-  - Message Suggestions
-  - Campaign Performance Summary
+
 
 ## Tech Stack
 
